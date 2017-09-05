@@ -1,0 +1,277 @@
+@import url('demo.css');
+@import url('font-awesome.css');
+
+/* GLOBALS */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: transparent; 
+}
+
+::-moz-selection {
+    background: transparent; 
+}
+
+.wrapper-demo {
+    margin: 20px 0 0 0;
+    *zoom: 1;
+    font-weight: 400;
+}
+
+.wrapper-demo:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+#site{
+	/* Definimos a largura da página */
+	width:1300px;
+	/* Definirmos a altura da página*/
+	height:800px;
+	/* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+	/*top : posição de cima */
+	margin-top:90px;
+	/* left: posição de esquerda*/
+	margin-left:auto;
+	/* bottom : posição de baixo */
+	margin-bottom:0;
+	/* right : posição de direita */
+	margin-right:auto;
+     
+  flex-direction: column:
+  justify-content: space-between;
+    
+	/* Aqui definiremos a cor de fundo da página */
+      background: #f4f4f4;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+	
+}
+
+header{
+	/*Novamente definimos a largura da div*/
+	width:100%;
+	/* altura da div */
+	height:100px;
+	/* Cor de fundo da div */
+	
+    text-align: center;
+    display: inline-block;
+	}
+h1{
+    font-family: "Pacifico";
+    font-size: 50px;
+}
+
+#conteudo{
+	/*Novamente definimos a largura da div*/
+	width:100%;
+	/* altura da div */
+	height:610px;
+	/* Cor de fundo da div */
+	
+}
+
+#conteudo-left{
+	/*Novamente definimos a largura da div*/
+	width:250px;
+	/* altura da div */
+	height:610px;
+	/* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+	float:left;
+	/* Cor de fundo da div */
+	
+	}
+#conteudo-right{       /* Não Esta sendo usado , devera acrescentar # Antes do conteudo-right */
+	/*Novamente definimos a largura da div*/
+	width:1050px;
+	/* altura da div */
+	height:610px;
+    padding-top: 80px;
+	/* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo em cascata, nossa div conteúdo definimos a largura de 1000px e na conteudo-left 500px, 
+automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+	float:left;
+	/* Cor de fundo da div */
+	
+	}   */
+
+footer{
+
+	/*Novamente definimos a largura da div*/
+	width:100px;
+	/* altura da div */
+	height:10px;
+	/* Cor de fundo da div */
+    position: relative;
+	text-align: center;
+    
+	}
+
+
+#headerhr { 
+    
+    width: 1200px;
+    height: 1px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 1px solid #4cbeff;
+    color: #4cbeff;
+    background-color: #4cbeff;
+} 
+
+#footerhr { 
+    
+    width: 1200px;
+    height: 1px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 1px solid #4cbeff;
+    color: #4cbeff;
+    background-color: #4cbeff;
+} 
+
+
+.register {
+  margin-left: 150px;
+  margin-top: 50px;
+  position: absolute;
+  width: 230px;
+  padding-top:10px;
+  padding-bottom: 70px;
+  padding-right: 500px;
+  background: #f4f4f4;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* DEMO 5 */
+
+.wrapper-dropdown-5 {
+    /* Size & position */
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 15px;
+   
+    /* Styles */
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-5:after { /* Little arrow */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #4cbeff transparent;
+}
+
+.wrapper-dropdown-5 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    /* Hiding */
+    max-height: 0;
+    overflow: hidden;
+}
+
+.wrapper-dropdown-5 .dropdown li {
+    padding: 0 10px ;
+}
+
+.wrapper-dropdown-5 .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid #e6e8ea;
+}
+
+.wrapper-dropdown-5 .dropdown li:last-of-type a {
+    border: none;
+}
+
+.wrapper-dropdown-5 .dropdown li i {
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-5 .dropdown li:hover a {
+    color: #57a9d9;
+}
+
+/* Active state */
+
+.wrapper-dropdown-5.active {
+    border-radius: 5px 5px 0 0;
+    background: #4cbeff;
+    box-shadow: none;
+    border-bottom: none;
+    color: white;
+}
+
+.wrapper-dropdown-5.active:after {
+    border-color: #82d1ff transparent;
+}
+
+.wrapper-dropdown-5.active .dropdown {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 400px;
+}
+
+/* No CSS3 support: none */

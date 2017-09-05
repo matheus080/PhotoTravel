@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Photo Travel</title>
+  <link rel="stylesheet" href="css/stylecadastro.css">
+  
+    <style>
+     body {
+            font-family: "Open Sans", sans-serif;
+            height: 50vh;
+            background: url("img/desertroad.jpg") 100% fixed;
+            background-size: cover;
+        }
+    
+    </style>
+</head>
+<body>
+  <h1 class="register-title">Bem-Vindo!</h1>
+  <form class="register">
+    <div class="register-switch">
+      <input type="radio" name="sex" value="F" id="sex_f" class="register-switch-input" checked>
+      <label for="sex_f" class="register-switch-label" required="required">Feminino</label>
+      <input type="radio" name="sex" value="M" id="sex_m" class="register-switch-input">
+      <label for="sex_m" class="register-switch-label">Masculino</label>
+    </div>
+    <input type="email" class="register-input" required="required" placeholder="Email" tabindex="1">
+    <input type="password" class="register-input" required="required" placeholder="Senha" tabindex="2">
+      
+    <input type="nome" class="register-input" required="required" placeholder="Nome Completo" tabindex="3">
+    <input type="date" class="register-input" required="required" placeholder="Data de Nascimento" tabindex="4">
+    <input type="tel" class="register-input"  required="required" placeholder="Celular" tabindex="5">
+      <br>
+    <p class="menudropdown"> Utilização: </p>
+      
+    <select id="appearance-select" name="utilizacao" tabindex="6">
+        <option value="viagens">Viagens</option>
+        <option value="pessoal">Pessoal</option>
+        <option value="portfolio">Porfólio</option>
+        <option value="comercio">Comércio</option>
+    </select>
+      
+      
+    <input type="button" class="voltar-button" value="Voltar" onClick="history.go(-1)">   
+    <input type="submit" value="Criar cadastro" required="required" class="register-button" tabindex="7">
+      
+  </form>
+</body>
+</html>
