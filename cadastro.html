@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Photo Travel</title>
   <link rel="stylesheet" href="css/stylecadastro.css">
+    
   
     <style>
      body {
@@ -18,22 +19,24 @@
         }
     
     </style>
+    
 </head>
 <body>
   <h1 class="register-title">Bem-Vindo!</h1>
-  <form class="register">
+  <form id="AjaxRequest" class="register">
     <div class="register-switch">
       <input type="radio" name="sex" value="F" id="sex_f" class="register-switch-input" checked>
       <label for="sex_f" class="register-switch-label" required="required">Feminino</label>
       <input type="radio" name="sex" value="M" id="sex_m" class="register-switch-input">
       <label for="sex_m" class="register-switch-label">Masculino</label>
     </div>
-    <input type="email" class="register-input" required="required" placeholder="Email" tabindex="1">
-    <input type="password" class="register-input" required="required" placeholder="Senha" tabindex="2">
       
-    <input type="nome" class="register-input" required="required" placeholder="Nome Completo" tabindex="3">
-    <input type="date" class="register-input" required="required" placeholder="Data de Nascimento" tabindex="4">
-    <input type="tel" class="register-input"  required="required" placeholder="Celular" tabindex="5">
+    <input name="email" type="email" class="register-input" required="required" placeholder="Email" tabindex="1">
+    <input name="password" type="password" class="register-input" required="required" placeholder="Senha" tabindex="2">
+      
+    <input name="nome" type="nome" class="register-input" required="required" placeholder="Nome Completo" tabindex="3">
+    <input name="date" type="date" class="register-input" required="required" placeholder="Data de Nascimento" tabindex="4">
+    <input name="tel" type="tel" class="register-input"  required="required" placeholder="Celular" tabindex="5">
       <br>
     <p class="menudropdown"> Utilização: </p>
       
@@ -46,8 +49,11 @@
       
       
     <input type="button" class="voltar-button" value="Voltar" onClick="history.go(-1)">   
-    <input type="submit" value="Criar cadastro" required="required" class="register-button" tabindex="7">
+    <button type="submit" class="register-button" tabindex="7">Criar Cadastro</button>
       
   </form>
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
